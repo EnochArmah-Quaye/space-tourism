@@ -1,8 +1,14 @@
-
+const nav = ["00 Home", "01 Destination", "02 Crew", "03 Technology"];
 
 function Nav() {
   return (
-    <div>This is the NavBar</div>
+    <div>
+        <ul>
+            {nav.map((item,index)=> (
+                <li key={index}>{item}</li>
+            ))}
+        </ul>
+    </div>
   )
 }
 
